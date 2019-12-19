@@ -520,7 +520,7 @@ gdk_pixbuf__vtf_load_frame (VtfHeader *header, VtfContext *context, GError **err
             	    int ii, jj;
             	    for(ii = 0; ii < 4; ii++)
                 	    for(jj = 0; jj < 4; jj++) {
-                	        pixels[stride*(i+ii) + 4*(j+jj)+3] = a[sel & 7];
+                	        pixels[stride*(i+ii) + 4*(j+jj)+3] = 255;//a[sel & 7];
                     		sel >>= 3;
                         }
                 }
